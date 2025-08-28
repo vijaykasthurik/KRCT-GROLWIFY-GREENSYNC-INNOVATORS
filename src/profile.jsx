@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const API_BASE_URL = 'http://localhost:5000/api';
 const getAuthToken = () => localStorage.getItem('token');
-const API_KEY = process.env.WEATHER_API_KEY; // Your OpenWeatherMap API Key
+const API_KEY = 'ef652dd7f8c85f6eba1ecb4dc26a9fe4'; // Your OpenWeatherMap API Key
 
 const Profile = () => { // Removed onNavigate prop
   const navigate = useNavigate(); // Initialize useNavigate hook

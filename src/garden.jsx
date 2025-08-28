@@ -34,7 +34,7 @@ function GardenPage() {
             setUserCity(city);
             const fetchWeather = async () => {
                 try {
-                    const apiKey = process.env.WEATHER_API_KEY;
+                    const apiKey = 'ef652dd7f8c85f6eba1ecb4dc26a9fe4';
                     const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
                     const { temp } = response.data.main;
                     const description = response.data.weather[0].description;

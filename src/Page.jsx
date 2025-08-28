@@ -829,7 +829,7 @@ export default function Page() { // Renamed from MainAppContent to Page as per o
 
       // ✅ 2. Open Razorpay checkout
       const options = {
-        key: process.env.RAZORPAY_KEY_ID, // Your Razorpay Test Key ID
+        key: 'rzp_test_PPZSpcfj6SfJPt', // Your Razorpay Test Key ID
         amount: orderData.amount,
         currency: "INR",
         name: "Growlify Gardening",
